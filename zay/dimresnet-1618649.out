@@ -1,0 +1,86 @@
+Loading pytorch-gpu/py3/2.7.0
+  Loading requirement: gcc/11.4.1 cuda/12.6.3 nccl/2.25.1-1-cuda
+    cudnn/9.5.1.17-cuda openmpi/4.1.6-cuda intel-oneapi-mkl/2024.1
+    magma/2.9.0-cuda sox/14.4.2 ffmpeg/6.1.1 hdf5/1.12.0-mpi-cuda
+    libjpeg-turbo/2.1.3 graphviz/2.49.0
++ srun ./bind_gpu.sh python dimresnet.py -b 64 --lr 0.8 -e 1 -n 24 --drop-last
+DimResnet
+==============
+Batch size :  64
+Learning rate :  0.8
+Num workers :  24
+Epoch :  1
+Checkpoint :  False
+Drop Last :  True
+DimResnet
+==============
+Batch size :  64
+Learning rate :  0.8
+Num workers :  24
+Epoch :  1
+Checkpoint :  False
+Drop Last :  True
+Momentum : 0.9
+Weight Decay  0.0
+Profile :  False
+==============
+DimResnet
+Momentum : 0.9
+Weight Decay  0.0
+Profile :  False
+==============
+DimResnet
+==============
+Batch size :  64
+Learning rate :  0.8
+Num workers :  24
+Epoch :  1
+Checkpoint :  False
+Drop Last :  True
+Momentum : 0.9
+Weight Decay  0.0
+Profile :  False
+==============
+==============
+Batch size :  64
+Learning rate :  0.8
+Num workers :  24
+Epoch :  1
+Checkpoint :  False
+Drop Last :  True
+Momentum : 0.9
+Weight Decay  0.0
+Profile :  False
+==============
+model: resnet50
+number of parameters: 25557032
+model: resnet50
+number of parameters: 25557032
+model: resnet50
+number of parameters: 25557032
+model: resnet50
+number of parameters: 25557032
+compile_fx.py:236: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+compile_fx.py:236: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+compile_fx.py:236: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+compile_fx.py:236: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+Epoch: [1/1], Loss: 6.9312, Epoch time: 680.556570
+Epoch: [1/1], Loss: 6.3805, Epoch time: 681.459708
+Epoch: [1/1], Loss: 6.6682, Epoch time: 681.817959
+Epoch: [1/1], Loss: 5.7346, Epoch time: 681.895845
+=> Test set: Accuracy: 0.64%
+Eval time:  49.37561562191695
+Train time :730.8360 seconds
+=> Test set: Accuracy: 4.32%
+Eval time:  48.94602935388684
+Train time :730.8425 seconds
+=> Test set: Accuracy: 0.35%
+Eval time:  49.02600111765787
+Train time :730.8446 seconds
+=> Test set: Accuracy: 0.10%
+Eval time:  50.28916673967615
+Train time :730.8463 seconds
